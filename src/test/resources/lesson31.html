@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        th, td {
+            border: 3px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        img {
+            width: 400px;
+            height: 600px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        input, select, button {
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Заголовок1</th>
+        <th>Заголовок2</th>
+        <th>Заголовок3</th>
+    </tr>
+    <tr>
+        <td>Ячейка1</td>
+        <td>Ячейка2</td>
+        <td>Ячейка3</td>
+    </tr>
+</table>
+
+<input id="input_example" type="text" placeholder="Текстовое поле"/>
+
+<div>
+    <input id="checkbox_example" type="checkbox"/>
+    <label for="checkbox_example">Чекбокс</label>
+</div>
+
+<label for="cars">Выберите автомобиль:</label>
+<select name="cars" id="cars">
+    <option value="volvo">Вольво</option>
+    <option value="mercedes">Мерс</option>
+    <option value="audi">Ауди</option>
+    <option value="reno">Рено</option>
+</select>
+
+<button data-qa="submit_button">Кнопка</button>
+
+<img src="phone.jpg" alt="Пример изображения">
+
+<p>Параграф 1</p>
+
+<a href="https://www.w3schools.com">Посетите W3Schools.com!</a>
+</body>
+</html>
